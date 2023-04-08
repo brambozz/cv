@@ -17,6 +17,7 @@
 %-------------------------------------------------------------------------------
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
+
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[11pt, a4paper]{awesome-cv}
 
@@ -44,7 +45,8 @@
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
-
+\usepackage[style=authortitle]{biblatex}
+\addbibresource{sections/publications.bib}
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
 %	Comment any of the lines below if they are not required
@@ -79,15 +81,11 @@
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-% \input{cv/education.tex}
-% \input{cv/skills.tex}
-% \input{cv/experience.tex}
-% \input{cv/extracurricular.tex}
-% \input{cv/honors.tex}
-% \input{cv/certificates.tex}
-% \input{cv/presentation.tex}
-% \input{cv/writing.tex}
-% \input{cv/committees.tex}
+\input{sections/education.tex}
+\input{sections/publications.tex}
+\input{sections/certificates.tex}
+\input{sections/skills.tex}
+\input{sections/teaching.tex}
 
 
 %-------------------------------------------------------------------------------

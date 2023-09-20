@@ -1,7 +1,7 @@
 @article{2023flare,
   title={Unleashing the Strengths of Unlabeled Data in Pan-cancer Abdominal Organ Quantification: the FLARE22 Challenge},
   author={Ma, Jun and Zhang, Yao and Gu, Song and Ge, Cheng and Ma, Shihao and Young, Adamo and Zhu, Cheng and Meng, Kangkang and Yang, Xin and Huang, Ziyan and others},
-  journal={arXiv},
+  journal={arXiv preprint arXiv:2308.05862},
   year={2023}
 }
 
@@ -19,7 +19,7 @@
 @article{2023medical,
   title={Medical diffusion on a budget: textual inversion for medical image generation},
   author={de Wilde, Bram and Saha, Anindo and ten Broek, Richard PG and Huisman, Henkjan},
-  journal={arXiv},
+  journal={arXiv preprint arXiv:2303.13430},
   year={2023}
 }
 
@@ -41,7 +41,6 @@ editor="Ma, Jun
 and Wang, Bo",
 title="Uncertainty-Guided Self-learning Framework for Semi-supervised Multi-organ Segmentation",
 booktitle="Fast and Low-Resource Semi-supervised Abdominal Organ Segmentation",
-journal="MICCAI FLARE workshop",
 year="2022",
 publisher="Springer Nature Switzerland",
 address="Cham",
@@ -73,8 +72,8 @@ isbn="978-3-031-23911-3"
 
 @article{2021cine,
   title={Cine-MRI detection of abdominal adhesions with spatio-temporal deep learning},
-  author={de Wilde, Bram and ten Broek, Richard PG and Huisman, Henkjan},
-  journal={Medical Imaging with Deep Learning},
+  author={De Wilde, Bram and ten Broek, Richard PG and Huisman, Henkjan},
+  journal={arXiv preprint arXiv:2106.08094},
   year={2021}
 }
 

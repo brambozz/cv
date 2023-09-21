@@ -153,12 +153,17 @@
 \setbool{acvSectionColorHighlight}{true}
 
 % Awesome section color
-% \def\@sectioncolor#1#2#3{%
-%   \ifbool{acvSectionColorHighlight}{{\color{awesome}#1#2#3}}{#1#2#3}%
+% \def\@sectioncolor[#1]{%
+%   \ifbool{acvSectionColorHighlight}{{\color{awesome}#1}}{#1}%
 % }
-\def\@sectioncolor#1{%
-  \ifbool{acvSectionColorHighlight}{{\color{awesome}#1}}{#1}%
-}
+% \def\@sectioncolor#1{%
+%   \ifbool{acvSectionColorHighlight}{{\color{awesome}#1}}{#1}%
+% }
+% \def\@sectioncolor**{}**{ \ifbool{acvSectionColorHighlight}{{\color{awesome}**{}}}{}** }
+% \def\@sectioncolor{}{%
+% \ifbool{acvSectionColorHighlight}{{\color{awesome}{}}}{}%
+% }
+\def\@sectioncolor{\color{awesome}}
 
 
 %-------------------------------------------------------------------------------
@@ -610,6 +615,7 @@
 % Usage: \cvsection{<section-title>}
 \newcommand{\cvsection}[1]{%
   \vspace{\acvSectionTopSkip}
+  \vspace{-3mm}
   \sectionstyle{#1}
   \phantomsection
   \color{sectiondivider}\vhrulefill{0.9pt}

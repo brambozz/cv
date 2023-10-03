@@ -1,0 +1,41 @@
+
+\cvsection{Notable projects}
+
+\cvsubsection{Detection of Adhesions on Cine-MRI with Spatio-Temporal Deep Learning}
+
+\vspace{-1mm}
+\paragraphstyle{
+Post-surgical adhesions can cause pain by connecting tissue and organs in the abdominal cavity.
+Cine-MRI is a non-invasive modality which captures dynamic motion during deep breathing, revealing adhesion presence through abnormal motion patterns.
+Improving adhesion diagnosis by development of AI could help bring this modality to more hospitals and help patients worldwide suffering from chronic pain.
+This unique medical AI challenge requires computer vision models to reason about both spatial and temporal features in order to detect tissue structures that stick together.
+We have investigated this problem from multiple perspectives, starting with characterizing observer variability (publication \ref{paper:inter}) and motion quality (publication \ref{paper:quantifiable}).
+In terms of AI development, we experimented with recurrent neural networks (publication \ref{paper:midl}) and deep learning segmentation approaches using manual annotations and a U-Net framework, currently under review.
+Currently, another observer study is in draft, where radiologists are assisted by deep learning models.
+Throughout the project, we have shown that adhesion detection on cine-MRI is a particularly hard challenge, and we have presented the first fully end-to-end deep learning approaches for this problem.
+This project was my primary focus in the PhD, and consequently I led the project from hypothesis, data collection, technical development, to dissemination of the results.
+}
+
+\cvsubsection{Adapting Latent Diffusion Models to Medical Imaging}
+
+\vspace{-1mm}
+Latent diffusion models are popular and highly succesful in (text-to-)image generation. Generative imaging can be highly relevant for the medical domain, especially for data-scarce settings like rare diseases. We explored if pre-trained latent diffusion models (Stable Diffusion) can be adapted to the medical domain. In publication \ref{paper:diffusion}, we demonstrate that textual inversion allows diagnostically relevant image generation for prostate MRI, chest X-ray and histopathology, using only 100 examples on a consumer-grade GPU. I performed the main experiments and wrote the paper.
+
+\cvsubsection{Uncertainty-Guided Semi-Supervised Segmentation}
+
+\vspace{-1mm}
+The MICCAI2022 Fast and Low-resource Semi-Supervised Abdominal Organ Segmentation (FLARE) challenge investigated two typically lacking factors in medical imaging: annotations and compute.
+The challenge task was to segment 13 organs on CT scans, provided 50 fully annotated cases and 2000 unannotated cases, while minimizing computational resources.
+With a colleague PhD, we developed a simple uncertainty-guided framework, where we use predictive uncertainty estimated via model ensembles to judge the quality of pseudo-labels generated for the unlabeled cases.
+We found that using uncertainty to filter out low-quality pseudo-labels leads to improved segmentation performance compared to not filtering at all (publications \ref{paper:uncertainty}, \ref{paper:flare}).
+A journal paper is currently under review, where we compare uncertainty metrics in detail to multiple baselines and found that metrics tailored towards the clinical task are more informative.
+We shared most work equally, with emphasis an on code and experiments for me.
+
+\cvsubsection{MSc thesis: Hopping Transport in Disordered Dopant Networks}
+
+\vspace{-1mm}
+Human brains operate at a fraction of the energy requirements of today’s AI systems, and conventional 2D silicon hardware is part of the reason.
+Neuromorphic hardware researchers investigate novel computational substrates which can address this shortcoming.
+I investigated numerical simulations of dopant networks in silicon, which allow for efficient exploration of the algorithmic capabilities of such systems without the need for physical samples (publication \ref{paper:hopping}).
+These dopant networks are a promising new hardware substrate for energy-efficient intelligent systems, which we demonstrated by classifying digits \textit{in materio} (publication \ref{paper:nature}).
+I formalized and initiated the development of the numerical simulation software. Additionally, I was involved in maintaining the lab's measurement and data collection software in Python.
